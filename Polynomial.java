@@ -33,7 +33,7 @@ class Polynomial {
     public double evaluate(double x) {
         double value = 0;
 
-        for (int i = 0; i < degree(); i++)
+        for (int i = 0; i <= degree(); i++)
             value += coeff[i] * Math.pow(x, i);
 
         return value;
