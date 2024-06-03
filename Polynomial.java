@@ -151,6 +151,9 @@ class Polynomial {
 
         String[] info = str.split("x");
 
+        if (info.length == 0)
+            return new Polynomial(1.0, 1);
+
         if (str.indexOf("x") == 0)
             return new Polynomial(1.0, Integer.parseInt(info[1]));
 
